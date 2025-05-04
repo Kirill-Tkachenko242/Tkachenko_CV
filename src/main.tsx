@@ -1,16 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { HashRouter } from 'react-router-dom'
-import App from './App'
-import './index.css'
-
-// BASE_URL будет "/" в деве и "/" в продакшне
-const basename = import.meta.env.BASE_URL
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from './context/ThemeContext';
+import App from './App';
+import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter basename={basename}>
-      <App />
-    </HashRouter>
-  </StrictMode>
-)
+    <ThemeProvider>                {/* ← здесь */}
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
+  </StrictMode>,
+);
