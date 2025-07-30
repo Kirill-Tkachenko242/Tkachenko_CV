@@ -67,13 +67,9 @@ const translations = {
       university: 'РГУ нефти и газа (НИУ) имени И.М. Губкина',
       degree: 'Интегрированные информационные автоматизированные системы',
       eduDuration: '2021 - 2025',
-<<<<<<< HEAD
       eduDescription: 'После университета я получил крепкие фундаментальные знания о' +
       'программировании, попробовал различные технологии и языки, что позволило мне понять, как устроена разработка на разных уровнях.' +
       'Помимо технических навыков, я научился добиваться своих целей, независимо от сложности задач.'
-=======
-      eduDescription: 'После университета я получил крепкие фундаментальные знания о программировании, попробовал различные технологии и языки, что позволило мне понять, как устроена разработка на разных уровнях. Помимо технических навыков, я научился добиваться своих целей, независимо от сложности задач.'
->>>>>>> 348d3520c5efeb43172a609d4291a7f39301f10b
     },
     contact: {
       title: 'Ссылки для связи',
@@ -153,7 +149,6 @@ const translations = {
       task4: 'Deepened knowledge in Linux and Windows server administration.',
       task5: 'Implemented the "Help" tab in the web application.',
       task6: 'Created a to-do application using React Hooks and components.',
-<<<<<<< HEAD
       task7: 'Used Ant Design to create responsive interface.',
       university: 'Gubkin Russian State University of Oil and Gas (National Research University)',
       degree: 'Integrated Information Automated Systems',
@@ -161,9 +156,6 @@ const translations = {
       eduDescription: 'After graduating, I acquired strong foundational knowledge in ' +
       'programming and explored various technologies and languages, which helped me understand software development at different levels' +
       'Beyond technical skills, I learned to achieve my goals, regardless of the complexity of the tasks.'
-=======
-      task7: 'Used Ant Design to create responsive interface.'
->>>>>>> 348d3520c5efeb43172a609d4291a7f39301f10b
     },
     contact: {
       title: 'Contact Links',
@@ -175,15 +167,9 @@ const translations = {
       downloadPdf: 'Download PDF',
       locationAvailability: 'Location and Availability',
       location: 'Location',
-<<<<<<< HEAD
       locationValue: 'Dublin, Ireland',
       timezone: 'Timezone',
       timezoneValue: 'UTC+1 (Dublin Time)',
-=======
-      locationValue: 'Moscow, Russia',
-      timezone: 'Timezone',
-      timezoneValue: 'UTC+3 (Moscow Time)',
->>>>>>> 348d3520c5efeb43172a609d4291a7f39301f10b
       availability: 'Availability',
       availabilityValue: 'Monday - Friday, 9:00 - 18:00',
       professionalProfiles: 'Professional Profiles',
