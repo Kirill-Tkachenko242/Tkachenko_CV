@@ -11,3 +11,11 @@ export function getInitialTheme(): 'light' | 'dark' {
   
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
+
+export function getInitialLanguage(): 'ru' | 'en' {
+  const savedLanguage = localStorage.getItem('language') as 'ru' | 'en';
+  if (savedLanguage) return savedLanguage;
+  
+  const browserLanguage = navigator.language.toLowerCase();
+  return browserLanguage.startsWith('ru') ? 'ru' : 'en';
+}

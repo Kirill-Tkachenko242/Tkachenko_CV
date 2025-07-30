@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { ThemeToggle } from './ThemeToggle';
+import { LanguageToggle } from './LanguageToggle';
+import { useLanguage } from '../context/LanguageContext';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <nav className="bg-background border-b">
@@ -19,22 +22,24 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/" className="px-3 py-2 rounded-md hover:bg-secondary">
-              Главная
+              {t('nav.home')}
             </Link>
             <Link to="/projects" className="px-3 py-2 rounded-md hover:bg-secondary">
-              Проекты
+              {t('nav.projects')}
             </Link>
             <Link to="/experience" className="px-3 py-2 rounded-md hover:bg-secondary">
-              Опыт
+              {t('nav.experience')}
             </Link>
             <Link to="/contact" className="px-3 py-2 rounded-md hover:bg-secondary">
-              Контакты
+              {t('nav.contact')}
             </Link>
+            <LanguageToggle />
             <ThemeToggle />
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
+            <LanguageToggle className="mr-2" />
             <ThemeToggle className="mr-2" />
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -55,28 +60,28 @@ export function Navigation() {
               className="block px-3 py-2 rounded-md hover:bg-secondary"
               onClick={() => setIsOpen(false)}
             >
-              Главная
+              {t('nav.home')}
             </Link>
             <Link
               to="/projects"
               className="block px-3 py-2 rounded-md hover:bg-secondary"
               onClick={() => setIsOpen(false)}
             >
-              Проекты
+              {t('nav.projects')}
             </Link>
             <Link
               to="/experience"
               className="block px-3 py-2 rounded-md hover:bg-secondary"
               onClick={() => setIsOpen(false)}
             >
-              Опыт
+              {t('nav.experience')}
             </Link>
             <Link
               to="/contact"
               className="block px-3 py-2 rounded-md hover:bg-secondary"
               onClick={() => setIsOpen(false)}
             >
-              Контакты
+              {t('nav.contact')}
             </Link>
           </div>
         </div>

@@ -31,3 +31,9 @@ export interface TechStack {
 }
 
 export type Theme = 'light' | 'dark';
+
+export type Language = 'ru' | 'en';
+
+export interface Translations {
+  [key: string]: string | Translations;
+}
