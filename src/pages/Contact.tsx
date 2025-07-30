@@ -23,7 +23,11 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">{t('contact.phone')}</p>
+<<<<<<< HEAD
                   <p className="text-foreground/70">+353 (083) 458-240</p>
+=======
+                  <p className="text-foreground/70">+7 (915) 100-44-55</p>
+>>>>>>> 348d3520c5efeb43172a609d4291a7f39301f10b
                 </div>
               </a>
 
